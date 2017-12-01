@@ -1,1 +1,7 @@
+# Erlang
 *.beam
+
+# Rust
+target/
+Cargo.lock
+**/*.rs.bk

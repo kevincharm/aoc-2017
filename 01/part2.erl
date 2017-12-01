@@ -11,10 +11,9 @@ sum([Last], Rotated, Result, Incr) ->
         true ->
             Result
     end;
-sum(Original, Rotated, Result, Incr) ->
+sum([Head | Rest], Rotated, Result, Incr) ->
     Next = lists:nth(Incr, Rotated),
     [RotHead | RotRest] = Rotated,
-    [Head | Rest] = Original,
     if
         Head == Next ->
             Head + sum(Rest, RotRest ++ [RotHead], Result, Incr);

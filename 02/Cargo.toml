@@ -1,0 +1,11 @@
+[package]
+
+name = "day2"
+version = "1.0.0"
+authors = [ "Kevin Tjiam <kevin@tjiam.com" ]
+publish = false
+
+[[bin]]
+
+name = "day2"
+path = "day2.rs"

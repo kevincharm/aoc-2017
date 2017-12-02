@@ -8,6 +8,7 @@ fn split_str_to_u32_vec(input: &str, output: &mut Vec<u32>) {
     }
 }
 
+// Part 1 solution:
 fn chksum_one(rows: &Vec<Vec<u32>>) -> u32 {
     let mut sum = 0;
     for row in rows {
@@ -20,6 +21,7 @@ fn chksum_one(rows: &Vec<Vec<u32>>) -> u32 {
     sum
 }
 
+// Part 2 solution:
 fn find_div(row: &Vec<u32>) -> u32 {
     let mut div = 0;
     for (i1, c1) in row.iter().enumerate() {

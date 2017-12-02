@@ -109,5 +109,5 @@ main(_) ->
     Rows = read_stdin(),
     ChecksumOne = checksum_one(Rows),
     ChecksumTwo = checksum_two(Rows),
-    erlang:display(ChecksumOne),
-    erlang:display(ChecksumTwo).
+    io:format("Part 1: ~p~n", [ChecksumOne]),
+    io:format("Part 2: ~p~n", [ChecksumTwo]).
